@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate mapping DTD 5.3//EN"
+ "http://Hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+ 
+ <hibernate-mapping>
+ <class name="es.centroafuera.ad.hibernate.ejemplo1.oficinas"
+ table="oficinas">
+	<id name="id" column="id">
+		<generator class="increment"></generator>
+	</id>
+	<property name="nombre" column="nombre" type="string"></property> 
+ 	<property name="fk_pais" column="fk_pais" type="int"></property> 
+ 	<property name="descripcion" column="descripcion" type="string"></property> 
+ 	
+ </class>
+ 
+ </hibernate-mapping>

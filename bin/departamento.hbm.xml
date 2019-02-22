@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate mapping DTD 5.3//EN"
+ "http://Hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+ 
+ <hibernate-mapping>
+ <class name="es.centroafuera.ad.hibernate.ejemplo1.departamento"
+ table="departamentos">
+	<id name="dept_no" column="dept_no">
+		<generator class="increment"></generator>
+	</id>
+	<property name="dnombre" column="dnombre" type="string"></property> 
+ 	<property name="loc" column="loc" type="string"></property> 
+ 	
+ </class>
+ 
+ </hibernate-mapping>
